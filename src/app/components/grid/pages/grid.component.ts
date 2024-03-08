@@ -10,6 +10,8 @@ import { userListMock } from 'src/app/mocks/user.mock';
 })
 export class GridComponent {
 
+  value = '';
+
   breadcrumb = {
     first: 'panel de administración',
     second: 'usuarios'

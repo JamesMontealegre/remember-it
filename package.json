@@ -11,7 +11,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^16.2.0",
+    "@angular/animations": "^16.2.12",
     "@angular/cdk": "^16.2.14",
     "@angular/common": "^16.2.0",
     "@angular/compiler": "^16.2.0",
@@ -49,6 +49,7 @@
     "@progress/kendo-licensing": "^1.0.2",
     "@progress/kendo-svg-icons": "^1.0.0",
     "@progress/kendo-theme-default": "^7.2.0",
+    "ngx-toastr": "^18.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"

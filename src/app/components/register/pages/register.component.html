@@ -1,1 +1,32 @@
-<p>register works!</p>
+<section>
+    <div class="main-session-content">
+        <div class="main-title-content">
+            <p>{{ title | uppercase }}</p>
+        </div>
+
+        <form class="main-form-content">
+            <mat-form-field appearance="outline" class="input-content">
+                <mat-label>{{ form.correo }}</mat-label>
+                <input matInput placeholder="Correo" type="email">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="input-content">
+                <mat-label>{{ form.contrasena }}</mat-label>
+                <input matInput placeholder="Contraseña" type="password">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="input-content">
+                <mat-label>{{ form.confContrasena }}</mat-label>
+                <input matInput placeholder="Confirmar contraseña" type="password">
+            </mat-form-field>
+        </form>
+
+        <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+            <button mat-raised-button color="primary" style="margin: 60px;" (click)="goToIngresar()" class="btn-remember-st">{{ form.ingresar |
+                uppercase }}</button>
+
+            <div class="register-content">
+                <p>{{form.noCuenta}}</p>
+                <p class="input-aux-text" routerLink="/session" routerLinkActive="active">{{form.registro}}</p>
+            </div>
+        </div>
+    </div>
+</section>

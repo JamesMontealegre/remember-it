@@ -1,1 +1,25 @@
-<p>recovery works!</p>
+<section>
+    <div class="main-session-content">
+        <div class="main-title-content">
+            <p>{{ title | uppercase }}</p>
+        </div>
+
+        <form class="main-form-content">
+            <p style="margin-bottom: 35px;">Ingrese el correo con el cual se registró en la plataforma.</p>
+            <mat-form-field appearance="outline" class="input-content">
+                <mat-label>{{ form.correo }}</mat-label>
+                <input matInput placeholder="Correo" type="email">
+            </mat-form-field>
+        </form>
+
+        <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+            <button mat-raised-button color="primary" style="margin: 60px;" (click)="goToIngresar()" class="btn-remember-st">{{ form.ingresar |
+                uppercase }}</button>
+
+            <div class="register-content">
+                <p>{{form.noCuenta}}</p>
+                <p class="input-aux-text" routerLink="/session" routerLinkActive="active">{{form.registro}}</p>
+            </div>
+        </div>
+    </div>
+</section>
