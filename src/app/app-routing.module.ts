@@ -11,6 +11,14 @@ const routes: Routes = [
     loadChildren: () => import('./components/grid/grid.module').then((m) => m.GridModule),
   },
   {
+    path: 'register',
+    loadChildren: () => import('./components/register/register.module').then((m) => m.RegisterModule),
+  },
+  {
+    path: 'recovery',
+    loadChildren: () => import('./components/recovery/recovery.module').then((m) => m.RecoveryModule),
+  },
+  {
     path: '',
     redirectTo: 'session',
     pathMatch: 'full'

@@ -1,0 +1,36 @@
+.main-session-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.main-title-content {
+  color: orange;
+  font-size: 50px;
+  margin-bottom: 120px;
+}
+
+.main-form-content {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.input-content {
+  width: 100%;
+}
+
+.input-aux-text {
+  font-weight: 500;
+  color: blue;
+}
+
+.register-content {
+  display: flex;
+
+  p {
+    margin: 2px;
+  }
+}
