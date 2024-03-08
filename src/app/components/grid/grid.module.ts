@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { GridModule } from '@progress/kendo-angular-grid';
 import { GridRoutingModule } from './grid-routing.module';
 
 
@@ -8,7 +8,8 @@ import { GridRoutingModule } from './grid-routing.module';
   declarations: [],
   imports: [
     CommonModule,
-    GridRoutingModule
+    GridRoutingModule,
+    GridModule
   ]
 })
-export class GridModule { }
+export class GridComponentModule { }

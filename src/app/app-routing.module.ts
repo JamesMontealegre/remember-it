@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: 'grid',
-    loadChildren: () => import('./components/grid/grid.module').then((m) => m.GridModule),
+    loadChildren: () => import('./components/grid/grid.module').then((m) => m.GridComponentModule),
   },
   {
     path: 'register',

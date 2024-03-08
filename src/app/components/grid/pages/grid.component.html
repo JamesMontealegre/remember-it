@@ -1,1 +1,90 @@
-<p>grid works!</p>
+<div class="heading">
+    <div class="breadcrumb">
+        <p style="margin-right: 5px;">{{ breadcrumb.first | uppercase }}</p> <em style="margin-right: 5px;">/</em>
+        <p>{{ breadcrumb.second | uppercase }}</p>
+    </div>
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <i class="fa-solid fa-right-from-bracket" style="font-size: 35px; margin-bottom: 10px; color: #F28B0C;"
+            routerLink="/session" routerLinkActive="active"></i>
+        <p>Usuario: Admin</p>
+    </div>
+</div>
+
+<div class="main-grid-content">
+    <kendo-grid [data]="gridData" [sortable]="{
+        allowUnsort: false,
+        mode: 'single'
+    }" [sort]="sort" [filterable]="filterable" [navigable]="true">
+
+        <kendo-grid-column field="id" [title]="'Id Usuario' | uppercase" [width]="25">
+            <mat-form-field class="example-full-width">
+                <mat-label>Favorite food</mat-label>
+                <input matInput placeholder="Id Usuario">
+            </mat-form-field>
+
+            <ng-template kendoGridCellTemplate let-dataItem>
+                <span>{{ dataItem.id }}</span>
+            </ng-template>
+        </kendo-grid-column>
+        <kendo-grid-column field="date" [title]="'Fecha creación' | uppercase" [width]="25">
+            <mat-form-field class="example-full-width">
+                <mat-label>Favorite food</mat-label>
+                <input matInput placeholder="Fecha creación">
+            </mat-form-field>
+
+            <ng-template kendoGridCellTemplate let-dataItem>
+                <span>{{ dataItem.date }}</span>
+            </ng-template>
+        </kendo-grid-column>
+        <kendo-grid-column field="email" [title]="'Correo' | uppercase" [width]="25">
+            <mat-form-field class="example-full-width">
+                <mat-label>Favorite food</mat-label>
+                <input matInput placeholder="Correo">
+            </mat-form-field>
+
+            <ng-template kendoGridCellTemplate let-dataItem>
+                <span>{{ dataItem.email }}</span>
+            </ng-template>
+        </kendo-grid-column>
+        <kendo-grid-column field="spouseName" [title]="'Nombre pareja' | uppercase" [width]="25">
+            <mat-form-field class="example-full-width">
+                <mat-label>Favorite food</mat-label>
+                <input matInput placeholder="Ex. Pizza">
+            </mat-form-field>
+
+            <ng-template kendoGridCellTemplate let-dataItem>
+                <span>{{ dataItem.spouseName }}</span>
+            </ng-template>
+        </kendo-grid-column>
+        <kendo-grid-column field="spouseId" [title]="'Id pareja' | uppercase" [width]="25">
+            <mat-form-field class="example-full-width">
+                <mat-label>Favorite food</mat-label>
+                <input matInput placeholder="Ex. Pizza">
+            </mat-form-field>
+
+            <ng-template kendoGridCellTemplate let-dataItem>
+                <span>{{ dataItem.spouseId }}</span>
+            </ng-template>
+        </kendo-grid-column>
+        <kendo-grid-column
+        [title]="'Detalle eventos' | uppercase"
+        [headerClass]="'center-title'"
+        [style]="{ 'text-align': 'center' }"
+        [width]="20"
+        [resizable]="false"
+        class="detail-event"
+      >
+        <ng-template kendoGridCellTemplate let-dataItem>
+          <div class="actions-btn-content">
+            <em
+              class="fas fa-eye"
+              title="Detalle del evento"
+              style="color: #F28B0C; font-size: 18px;"
+            ></em>
+          </div>
+        </ng-template>
+      </kendo-grid-column>
+        
+    </kendo-grid>
+
+</div>

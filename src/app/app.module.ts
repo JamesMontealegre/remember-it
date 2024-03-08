@@ -10,6 +10,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { RegisterComponent } from './components/register/pages/register.component';
 import { RecoveryComponent } from './components/recovery/pages/recovery.component';
+import { GridModule } from '@progress/kendo-angular-grid';
+
+
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { RecoveryComponent } from './components/recovery/pages/recovery.componen
     AppRoutingModule,
     BrowserAnimationsModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    GridModule
   ],
   providers: [],
   bootstrap: [AppComponent]
