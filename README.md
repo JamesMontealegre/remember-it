@@ -1,4 +1,4 @@
-# Recordámelo - UX Uniandes
+# Recordámelo - UX Uniandes - WEB
 
 ### To run Project
 ### Dependencies:
