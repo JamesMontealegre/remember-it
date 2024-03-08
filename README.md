@@ -1,12 +1,18 @@
-# To run Project
-## Dependencies:
-Angular v16
-Node 20.11.1
-Npm 10.2.4
+# Recordámelo - UX Uniandes
 
-commands to run:
-npm install --legacy-peer-deps
-npm start
+### To run Project
+### Dependencies:
+
+Angular v16  
+
+Node 20.11.1  
+
+Npm 10.2.4  
+
+commands to run:  
+
+npm install --legacy-peer-deps  
+npm start  
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.12.
