@@ -1,18 +1,16 @@
 # Recordámelo - UX Uniandes - WEB
 
-### To run Project
-### Dependencies:
+## Prerequisites
+Make sure you have all dependencies required
 
-Angular v16  
+1. Angular v16  
+2. Node 20.11.1  
+3. Npm 10.2.4  
 
-Node 20.11.1  
+## Get started  
 
-Npm 10.2.4  
-
-commands to run:  
-
-npm install --legacy-peer-deps  
-npm start  
+1. npm install --legacy-peer-deps  
+2. npm start  
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.12.
